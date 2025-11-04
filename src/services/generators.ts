@@ -1,15 +1,25 @@
 'use strict';
 
 import TextmateLanguageService from '../main';
-import { ServiceBase } from '../util/service';
 
-export class GeneratorService extends ServiceBase<TextmateLanguageService> {
+export class GeneratorCollection {
+	private _languages: Map<string, TextmateLanguageService> = new Map();
+
 	constructor(
 	) {
-		super();
+		this._languages = new Map();
 	}
 
-	public parse(languageId: string): Promise<TextmateLanguageService> {
-		return Promise.resolve(new TextmateLanguageService(languageId));
+	public get(languageId: string): TextmateLanguageService {
+		if (this._languages.has(languageId)) {
+			return this._languages.get(languageId);
+		}
+		return this._create(languageId);
+	}
+
+	private _create(languageId: string): TextmateLanguageService {
+		const service = new TextmateLanguageService(languageId);
+		this._languages.set(languageId, service);
+		return service;
 	}
 }

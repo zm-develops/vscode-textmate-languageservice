@@ -2,13 +2,13 @@
 'use strict';
 
 import * as vscode from 'vscode';
-import { GeneratorService } from './services/generators';
+import { GeneratorCollection } from './services/generators';
 import { TextmateScopeSelector } from './util/selectors';
 import { ContributorData } from './util/contributes';
 import type { TextmateToken } from './services/tokenizer';
 import type { GrammarLanguageDefinition, LanguageDefinition } from './util/contributes';
 
-const generators = new GeneratorService();
+const generators = new GeneratorCollection();
 
 const commentScopeSelector = new TextmateScopeSelector('comment');
 const stringScopeSelector = new TextmateScopeSelector('string');
@@ -23,10 +23,10 @@ const contributorData = new ContributorData();
  * @returns {Promise<TextmateToken>} Promise resolving to token data for scope selected by caret position.
  */
 export async function getScopeInformationAtPosition(document: vscode.TextDocument, position: vscode.Position): Promise<TextmateToken> {
-	const generator = await generators.fetch(document.languageId);
+	const generator = generators.get(document.languageId);
 	const tokenService = await generator.initTokenService();
 	const tokens = await tokenService.fetch(document);
-	const caret = tokens.find(findTokenByPosition(position));
+	const caret = tokens.find(filterTokenByPosition(position));
 	return caret;
 };
 
@@ -91,7 +91,7 @@ export function getContributorExtension(languageId: string): vscode.Extension<un
 	return contributorData.getExtensionFromLanguageId(languageId);
 };
 
-function findTokenByPosition(position: vscode.Position) {
+function filterTokenByPosition(position: vscode.Position) {
 	return function(t: TextmateToken) {
 		const start = new vscode.Position(t.line, t.startIndex);
 		const end = new vscode.Position(t.line, t.endIndex);

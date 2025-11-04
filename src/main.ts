@@ -20,8 +20,10 @@ import { getScopeInformationAtPosition, getTokenInformationAtPosition, getScopeR
 
 import type { ConfigJson } from './config';
 import type { ExtensionManifest, ExtensionContributions, ExtensionManifestContributionKey, GrammarDefinition, GrammarInjectionContribution, GrammarLanguageDefinition, ConfigurationPaths, LanguageDefinition, EmbeddedLanguagesDefinition, TokenTypeDefinition } from './util/contributes';
-import type { GeneratorService } from './services/generators';
+import type { GeneratorCollection } from './services/generators';
 import type { TextmateToken } from './services/tokenizer';
+import { IndentationService } from './services/indentation';
+import { ConfigSymbolService } from './services/symbol';
 
 const _private = Symbol('private');
 
@@ -30,6 +32,8 @@ interface Private {
 	grammarPromise?: Promise<vscodeTextmate.IGrammar>;
 
 	tokenService?: TokenizerService;
+	indentationService?: IndentationService;
+	symbolService?: ConfigSymbolService;
 	outlineService?: OutlineService;
 	documentService?: DocumentService;
 
@@ -119,11 +123,34 @@ export default class TextmateLanguageService {
 			return this[_private].tokenService;
 		}
 
-		const config = await this[_private].configPromise;
 		const grammar = await this[_private].grammarPromise;
-		this[_private].tokenService = new TokenizerService(config, grammar);
+		this[_private].tokenService = new TokenizerService(grammar);
 
 		return this[_private].tokenService;
+	}
+
+	public async initIndentationService(): Promise<IndentationService> {
+		if (this[_private].indentationService) {
+			return this[_private].indentationService;
+		}
+
+		const config = await this[_private].configPromise;
+		const tokenService = await this.initTokenService();
+		this[_private].indentationService = new IndentationService(config, tokenService);
+
+		return this[_private].indentationService;
+	}
+
+	public async initConfigSymbolService() {
+		if (this[_private].symbolService) {
+			return this[_private].symbolService;
+		}
+
+		const config = await this[_private].configPromise;
+		const tokenService = await this.initTokenService();
+		this[_private].symbolService = new ConfigSymbolService(config, tokenService);
+
+		return this[_private].symbolService;
 	}
 
 	public async initOutlineService(): Promise<OutlineService> {
@@ -132,8 +159,9 @@ export default class TextmateLanguageService {
 		}
 
 		const config = await this[_private].configPromise;
-		const tokenService = await this.initTokenService();
-		this[_private].outlineService = new OutlineService(config, tokenService);
+		const symbolService = await this.initConfigSymbolService();
+		const indentationService = await this.initIndentationService();
+		this[_private].outlineService = new OutlineService(config, symbolService, indentationService);
 
 		return this[_private].outlineService;
 	}
@@ -157,8 +185,15 @@ export default class TextmateLanguageService {
 
 		const config = await this[_private].configPromise;
 		const tokenService = await this.initTokenService();
+		const indentationService = await this.initIndentationService();
 		const outlineService = await this.initOutlineService();
-		this[_private].foldingRangeProvider = new TextmateFoldingRangeProvider(config, tokenService, outlineService);
+
+		this[_private].foldingRangeProvider = new TextmateFoldingRangeProvider(
+			config,
+			tokenService,
+			indentationService,
+			outlineService
+		);
 
 		return this[_private].foldingRangeProvider;
 	}
@@ -206,5 +241,5 @@ export type {
 	TextmateToken, ConfigData, ConfigJson, ExtensionManifest,
 	GrammarLanguageDefinition, GrammarInjectionContribution, GrammarDefinition, LanguageDefinition,
 	EmbeddedLanguagesDefinition, TokenTypeDefinition, ExtensionContributions, ConfigurationPaths,
-	ExtensionManifestContributionKey, DocumentService, GeneratorService, OutlineService,
+	ExtensionManifestContributionKey, DocumentService, GeneratorCollection, OutlineService, IndentationService
 };
