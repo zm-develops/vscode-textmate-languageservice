@@ -34,6 +34,7 @@ const EolMap = {
 };
 
 export class FullTextDocument implements vscode.TextDocument {
+	private _encoding: string;
 	private _eol: vscode.EndOfLine;
 	private _fileName: string;
 	private _isClosed: boolean;
@@ -76,6 +77,7 @@ export class FullTextDocument implements vscode.TextDocument {
 		}
 
 		this._content = content;
+		this._encoding = 'utf8';
 		this._eol = endOfLine;
 		this._fileName = uri.path.split('/').pop();
 		this._isClosed = false;
@@ -85,6 +87,10 @@ export class FullTextDocument implements vscode.TextDocument {
 		this._lineCount = lineCount;
 		this._uri = uri;
 		this._version = 0;
+	}
+
+	public get encoding(): string {
+		return this._encoding;
 	}
 
 	public get fileName(): string {
