@@ -5,11 +5,11 @@ start = _ selector:(selector) _ {
 }
 
 atom
-	= _ segment:([a-zA-Z0-9+_]+[a-zA-Z0-9-+_]*) _ {
+	= segment:([a-zA-Z0-9+_]+[a-zA-Z0-9-+_]*) {
 		return new matchers.SegmentMatcher(segment);
 	}
 
-	/ _ asterisk:[\*] _ {
+	/ asterisk:[\*] {
 		return new matchers.TrueMatcher();
 	}
 
