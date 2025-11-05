@@ -49,7 +49,7 @@ export class TrueMatcher {
 		return true;
 	}
 
-	public getPrefix(_: string[]): void {
+	public getPrefix(_: string): void {
 		return void 0;
 	}
 }
