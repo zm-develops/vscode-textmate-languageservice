@@ -2376,7 +2376,7 @@
     "type": "storage.type.function.matlab",
     "text": "function",
     "line": 20,
-    "level": 1
+    "level": 0
   },
   {
     "startIndex": 8,
@@ -2388,7 +2388,7 @@
     "type": "meta.function.matlab",
     "text": " ",
     "line": 20,
-    "level": 1
+    "level": 0
   },
   {
     "startIndex": 9,
@@ -2402,7 +2402,7 @@
     "type": "entity.name.function.matlab",
     "text": "handleCatNoiseKo",
     "line": 20,
-    "level": 1
+    "level": 0
   },
   {
     "startIndex": 25,
@@ -2417,7 +2417,7 @@
     "type": "punctuation.definition.parameters.begin.matlab",
     "text": "(",
     "line": 20,
-    "level": 1
+    "level": 0
   },
   {
     "startIndex": 26,
@@ -2432,7 +2432,7 @@
     "type": "variable.parameter.input.matlab",
     "text": "locale",
     "line": 20,
-    "level": 1
+    "level": 0
   },
   {
     "startIndex": 32,
@@ -2447,7 +2447,7 @@
     "type": "punctuation.definition.parameters.end.matlab",
     "text": ")",
     "line": 20,
-    "level": 1
+    "level": 0
   },
   {
     "startIndex": 0,

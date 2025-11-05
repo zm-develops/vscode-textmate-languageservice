@@ -863,7 +863,7 @@
   },
   {
     "startIndex": 12,
-    "endIndex": 22,
+    "endIndex": 15,
     "scopes": [
       "source.matlab",
       "meta.class.matlab",
@@ -873,7 +873,39 @@
       "variable.other.readwrite.matlab"
     ],
     "type": "variable.other.readwrite.matlab",
-    "text": "obj.Locale",
+    "text": "obj",
+    "line": 10,
+    "level": 3
+  },
+  {
+    "startIndex": 15,
+    "endIndex": 16,
+    "scopes": [
+      "source.matlab",
+      "meta.class.matlab",
+      "meta.methods.matlab",
+      "meta.function.matlab",
+      "meta.assignment.variable.single.matlab",
+      "punctuation.accessor.dot.matlab"
+    ],
+    "type": "punctuation.accessor.dot.matlab",
+    "text": ".",
+    "line": 10,
+    "level": 3
+  },
+  {
+    "startIndex": 16,
+    "endIndex": 22,
+    "scopes": [
+      "source.matlab",
+      "meta.class.matlab",
+      "meta.methods.matlab",
+      "meta.function.matlab",
+      "meta.assignment.variable.single.matlab",
+      "variable.other.property.matlab"
+    ],
+    "type": "variable.other.property.matlab",
+    "text": "Locale",
     "line": 10,
     "level": 3
   },
@@ -1388,7 +1420,7 @@
   },
   {
     "startIndex": 12,
-    "endIndex": 20,
+    "endIndex": 15,
     "scopes": [
       "source.matlab",
       "meta.class.matlab",
@@ -1398,7 +1430,39 @@
       "variable.other.readwrite.matlab"
     ],
     "type": "variable.other.readwrite.matlab",
-    "text": "obj.Name",
+    "text": "obj",
+    "line": 11,
+    "level": 3
+  },
+  {
+    "startIndex": 15,
+    "endIndex": 16,
+    "scopes": [
+      "source.matlab",
+      "meta.class.matlab",
+      "meta.methods.matlab",
+      "meta.function.matlab",
+      "meta.assignment.variable.single.matlab",
+      "punctuation.accessor.dot.matlab"
+    ],
+    "type": "punctuation.accessor.dot.matlab",
+    "text": ".",
+    "line": 11,
+    "level": 3
+  },
+  {
+    "startIndex": 16,
+    "endIndex": 20,
+    "scopes": [
+      "source.matlab",
+      "meta.class.matlab",
+      "meta.methods.matlab",
+      "meta.function.matlab",
+      "meta.assignment.variable.single.matlab",
+      "variable.other.property.matlab"
+    ],
+    "type": "variable.other.property.matlab",
+    "text": "Name",
     "line": 11,
     "level": 3
   },
@@ -1491,7 +1555,7 @@
   },
   {
     "startIndex": 12,
-    "endIndex": 21,
+    "endIndex": 15,
     "scopes": [
       "source.matlab",
       "meta.class.matlab",
@@ -1501,7 +1565,39 @@
       "variable.other.readwrite.matlab"
     ],
     "type": "variable.other.readwrite.matlab",
-    "text": "obj.Order",
+    "text": "obj",
+    "line": 12,
+    "level": 3
+  },
+  {
+    "startIndex": 15,
+    "endIndex": 16,
+    "scopes": [
+      "source.matlab",
+      "meta.class.matlab",
+      "meta.methods.matlab",
+      "meta.function.matlab",
+      "meta.assignment.variable.single.matlab",
+      "punctuation.accessor.dot.matlab"
+    ],
+    "type": "punctuation.accessor.dot.matlab",
+    "text": ".",
+    "line": 12,
+    "level": 3
+  },
+  {
+    "startIndex": 16,
+    "endIndex": 21,
+    "scopes": [
+      "source.matlab",
+      "meta.class.matlab",
+      "meta.methods.matlab",
+      "meta.function.matlab",
+      "meta.assignment.variable.single.matlab",
+      "variable.other.property.matlab"
+    ],
+    "type": "variable.other.property.matlab",
+    "text": "Order",
     "line": 12,
     "level": 3
   },
@@ -1594,7 +1690,7 @@
   },
   {
     "startIndex": 12,
-    "endIndex": 19,
+    "endIndex": 15,
     "scopes": [
       "source.matlab",
       "meta.class.matlab",
@@ -1604,7 +1700,39 @@
       "variable.other.readwrite.matlab"
     ],
     "type": "variable.other.readwrite.matlab",
-    "text": "obj.Age",
+    "text": "obj",
+    "line": 13,
+    "level": 3
+  },
+  {
+    "startIndex": 15,
+    "endIndex": 16,
+    "scopes": [
+      "source.matlab",
+      "meta.class.matlab",
+      "meta.methods.matlab",
+      "meta.function.matlab",
+      "meta.assignment.variable.single.matlab",
+      "punctuation.accessor.dot.matlab"
+    ],
+    "type": "punctuation.accessor.dot.matlab",
+    "text": ".",
+    "line": 13,
+    "level": 3
+  },
+  {
+    "startIndex": 16,
+    "endIndex": 19,
+    "scopes": [
+      "source.matlab",
+      "meta.class.matlab",
+      "meta.methods.matlab",
+      "meta.function.matlab",
+      "meta.assignment.variable.single.matlab",
+      "variable.other.property.matlab"
+    ],
+    "type": "variable.other.property.matlab",
+    "text": "Age",
     "line": 13,
     "level": 3
   },
@@ -1697,7 +1825,7 @@
   },
   {
     "startIndex": 12,
-    "endIndex": 24,
+    "endIndex": 15,
     "scopes": [
       "source.matlab",
       "meta.class.matlab",
@@ -1707,7 +1835,39 @@
       "variable.other.readwrite.matlab"
     ],
     "type": "variable.other.readwrite.matlab",
-    "text": "obj.Tameable",
+    "text": "obj",
+    "line": 14,
+    "level": 3
+  },
+  {
+    "startIndex": 15,
+    "endIndex": 16,
+    "scopes": [
+      "source.matlab",
+      "meta.class.matlab",
+      "meta.methods.matlab",
+      "meta.function.matlab",
+      "meta.assignment.variable.single.matlab",
+      "punctuation.accessor.dot.matlab"
+    ],
+    "type": "punctuation.accessor.dot.matlab",
+    "text": ".",
+    "line": 14,
+    "level": 3
+  },
+  {
+    "startIndex": 16,
+    "endIndex": 24,
+    "scopes": [
+      "source.matlab",
+      "meta.class.matlab",
+      "meta.methods.matlab",
+      "meta.function.matlab",
+      "meta.assignment.variable.single.matlab",
+      "variable.other.property.matlab"
+    ],
+    "type": "variable.other.property.matlab",
+    "text": "Tameable",
     "line": 14,
     "level": 3
   },

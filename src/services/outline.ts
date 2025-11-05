@@ -6,7 +6,9 @@ import { TextmateScopeSelector } from '../util/selectors';
 import { ServiceBase } from '../util/service';
 
 import type { ConfigData } from '../config';
-import type { TokenizerService, TextmateToken } from './tokenizer';
+import type { TextmateToken } from './tokenizer';
+import type { IndentationService } from './indentation';
+import type { ConfigSymbolService } from './symbol';
 
 const entitySelector = new TextmateScopeSelector('entity');
 
@@ -21,7 +23,11 @@ export interface OutlineEntry {
 }
 
 export class OutlineService extends ServiceBase<OutlineEntry[]> {
-	constructor(private _config: ConfigData, private _tokenService: TokenizerService) {
+	constructor(
+		private _config: ConfigData,
+		private _symbolService: ConfigSymbolService,
+		private _indentationService: IndentationService
+	) {
 		super();
 	}
 
@@ -32,7 +38,8 @@ export class OutlineService extends ServiceBase<OutlineEntry[]> {
 
 	public async parse(document: vscode.TextDocument): Promise<OutlineEntry[]> {
 		const outline: OutlineEntry[] = [];
-		const tokens = await this._tokenService.fetch(document);
+		const tokens = await this._symbolService.fetch(document);
+		const levels = await this._indentationService.fetch(document);
 
 		for (let index = 0; index < tokens.length; index++) {
 			const entry = tokens[index];
@@ -49,7 +56,7 @@ export class OutlineService extends ServiceBase<OutlineEntry[]> {
 
 			outline.push({
 				anchor: index,
-				level: entry.level,
+				level: levels[index],
 				line: lineNumber,
 				location: new vscode.Location(
 					document.uri,

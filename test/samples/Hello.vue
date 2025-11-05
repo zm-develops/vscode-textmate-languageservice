@@ -76,5 +76,5 @@
 
 <style lang="stylus" scoped>
 .blue_text
-  color blue
+	color blue
 </style>

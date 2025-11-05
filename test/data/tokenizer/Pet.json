@@ -72,7 +72,7 @@
     "type": "meta.class.ts",
     "text": "    ",
     "line": 1,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -85,7 +85,7 @@
     "type": "storage.modifier.ts",
     "text": "public",
     "line": 1,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 10,
@@ -98,7 +98,7 @@
     "type": "meta.field.declaration.ts",
     "text": " ",
     "line": 1,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 11,
@@ -113,7 +113,7 @@
     "type": "variable.object.property.ts",
     "text": "locale",
     "line": 1,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 17,
@@ -128,7 +128,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 1,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 18,
@@ -142,7 +142,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 1,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 19,
@@ -157,7 +157,7 @@
     "type": "support.type.primitive.ts",
     "text": "string",
     "line": 1,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 25,
@@ -170,7 +170,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 1,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -182,7 +182,7 @@
     "type": "meta.class.ts",
     "text": "    ",
     "line": 2,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -195,7 +195,7 @@
     "type": "storage.modifier.ts",
     "text": "public",
     "line": 2,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 10,
@@ -208,7 +208,7 @@
     "type": "meta.field.declaration.ts",
     "text": " ",
     "line": 2,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 11,
@@ -223,7 +223,7 @@
     "type": "variable.object.property.ts",
     "text": "name",
     "line": 2,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 15,
@@ -238,7 +238,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 2,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 16,
@@ -252,7 +252,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 2,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 17,
@@ -267,7 +267,7 @@
     "type": "support.type.primitive.ts",
     "text": "string",
     "line": 2,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 23,
@@ -280,7 +280,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 2,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -292,7 +292,7 @@
     "type": "meta.class.ts",
     "text": "    ",
     "line": 3,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -305,7 +305,7 @@
     "type": "storage.modifier.ts",
     "text": "public",
     "line": 3,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 10,
@@ -318,7 +318,7 @@
     "type": "meta.field.declaration.ts",
     "text": " ",
     "line": 3,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 11,
@@ -333,7 +333,7 @@
     "type": "variable.object.property.ts",
     "text": "order",
     "line": 3,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 16,
@@ -348,7 +348,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 3,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 17,
@@ -362,7 +362,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 3,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 18,
@@ -377,7 +377,7 @@
     "type": "support.type.primitive.ts",
     "text": "string",
     "line": 3,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 24,
@@ -390,7 +390,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 3,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -402,7 +402,7 @@
     "type": "meta.class.ts",
     "text": "    ",
     "line": 4,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -415,7 +415,7 @@
     "type": "storage.modifier.ts",
     "text": "public",
     "line": 4,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 10,
@@ -428,7 +428,7 @@
     "type": "meta.field.declaration.ts",
     "text": " ",
     "line": 4,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 11,
@@ -443,7 +443,7 @@
     "type": "variable.object.property.ts",
     "text": "age",
     "line": 4,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 14,
@@ -458,7 +458,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 4,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 15,
@@ -472,7 +472,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 4,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 16,
@@ -487,7 +487,7 @@
     "type": "support.type.primitive.ts",
     "text": "number",
     "line": 4,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 22,
@@ -500,7 +500,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 4,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -512,7 +512,7 @@
     "type": "meta.class.ts",
     "text": "    ",
     "line": 5,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -525,7 +525,7 @@
     "type": "storage.modifier.ts",
     "text": "public",
     "line": 5,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 10,
@@ -538,7 +538,7 @@
     "type": "meta.field.declaration.ts",
     "text": " ",
     "line": 5,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 11,
@@ -553,7 +553,7 @@
     "type": "variable.object.property.ts",
     "text": "tameable",
     "line": 5,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 19,
@@ -568,7 +568,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 5,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 20,
@@ -582,7 +582,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 5,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 21,
@@ -597,7 +597,7 @@
     "type": "support.type.primitive.ts",
     "text": "boolean",
     "line": 5,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 28,
@@ -610,7 +610,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 5,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -622,7 +622,7 @@
     "type": "meta.class.ts",
     "text": "    ",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -636,7 +636,7 @@
     "type": "storage.modifier.ts",
     "text": "public",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 10,
@@ -649,7 +649,7 @@
     "type": "meta.method.declaration.ts",
     "text": " ",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 11,
@@ -663,7 +663,7 @@
     "type": "storage.type.ts",
     "text": "constructor",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 22,
@@ -678,7 +678,7 @@
     "type": "punctuation.definition.parameters.begin.ts",
     "text": "(",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 23,
@@ -693,7 +693,7 @@
     "type": "variable.parameter.ts",
     "text": "name",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 27,
@@ -709,7 +709,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 28,
@@ -724,7 +724,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 29,
@@ -740,7 +740,7 @@
     "type": "support.type.primitive.ts",
     "text": "string",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 35,
@@ -755,7 +755,7 @@
     "type": "punctuation.separator.parameter.ts",
     "text": ",",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 36,
@@ -769,7 +769,7 @@
     "type": "meta.parameters.ts",
     "text": " ",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 37,
@@ -784,7 +784,7 @@
     "type": "variable.parameter.ts",
     "text": "age",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 40,
@@ -800,7 +800,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 41,
@@ -815,7 +815,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 42,
@@ -831,7 +831,7 @@
     "type": "support.type.primitive.ts",
     "text": "number",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 48,
@@ -846,7 +846,7 @@
     "type": "punctuation.separator.parameter.ts",
     "text": ",",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 49,
@@ -860,7 +860,7 @@
     "type": "meta.parameters.ts",
     "text": " ",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 50,
@@ -875,7 +875,7 @@
     "type": "variable.parameter.ts",
     "text": "order",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 55,
@@ -891,7 +891,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 56,
@@ -906,7 +906,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 57,
@@ -922,7 +922,7 @@
     "type": "support.type.primitive.ts",
     "text": "string",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 63,
@@ -937,7 +937,7 @@
     "type": "punctuation.separator.parameter.ts",
     "text": ",",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 64,
@@ -951,7 +951,7 @@
     "type": "meta.parameters.ts",
     "text": " ",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 65,
@@ -966,7 +966,7 @@
     "type": "variable.parameter.ts",
     "text": "tameable",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 73,
@@ -982,7 +982,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 74,
@@ -997,7 +997,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 75,
@@ -1013,7 +1013,7 @@
     "type": "support.type.primitive.ts",
     "text": "boolean",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 82,
@@ -1028,7 +1028,7 @@
     "type": "punctuation.definition.parameters.end.ts",
     "text": ")",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 83,
@@ -1041,7 +1041,7 @@
     "type": "meta.method.declaration.ts",
     "text": " ",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 84,
@@ -1056,7 +1056,7 @@
     "type": "punctuation.definition.block.ts",
     "text": "{",
     "line": 6,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -1070,7 +1070,7 @@
     "type": "meta.block.ts",
     "text": "        ",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 8,
@@ -1085,7 +1085,7 @@
     "type": "variable.language.this.ts",
     "text": "this",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 12,
@@ -1100,7 +1100,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 13,
@@ -1115,7 +1115,7 @@
     "type": "variable.other.property.ts",
     "text": "locale",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 19,
@@ -1129,7 +1129,7 @@
     "type": "meta.block.ts",
     "text": " ",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 20,
@@ -1144,7 +1144,7 @@
     "type": "keyword.operator.assignment.ts",
     "text": "=",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 21,
@@ -1158,7 +1158,7 @@
     "type": "meta.block.ts",
     "text": " ",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 22,
@@ -1174,7 +1174,7 @@
     "type": "variable.other.object.ts",
     "text": "Intl",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 26,
@@ -1190,7 +1190,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 27,
@@ -1206,7 +1206,7 @@
     "type": "entity.name.function.ts",
     "text": "DateTimeFormat",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 41,
@@ -1221,7 +1221,7 @@
     "type": "meta.brace.round.ts",
     "text": "(",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 42,
@@ -1236,7 +1236,7 @@
     "type": "meta.brace.round.ts",
     "text": ")",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 43,
@@ -1252,7 +1252,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 44,
@@ -1268,7 +1268,7 @@
     "type": "entity.name.function.ts",
     "text": "resolvedOptions",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 59,
@@ -1283,7 +1283,7 @@
     "type": "meta.brace.round.ts",
     "text": "(",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 60,
@@ -1298,7 +1298,7 @@
     "type": "meta.brace.round.ts",
     "text": ")",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 61,
@@ -1313,7 +1313,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 62,
@@ -1328,7 +1328,7 @@
     "type": "variable.other.property.ts",
     "text": "locale",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 68,
@@ -1343,7 +1343,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 7,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 0,
@@ -1357,7 +1357,7 @@
     "type": "meta.block.ts",
     "text": "        ",
     "line": 8,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 8,
@@ -1372,7 +1372,7 @@
     "type": "variable.language.this.ts",
     "text": "this",
     "line": 8,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 12,
@@ -1387,7 +1387,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 8,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 13,
@@ -1402,7 +1402,7 @@
     "type": "variable.other.property.ts",
     "text": "name",
     "line": 8,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 17,
@@ -1416,7 +1416,7 @@
     "type": "meta.block.ts",
     "text": " ",
     "line": 8,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 18,
@@ -1431,7 +1431,7 @@
     "type": "keyword.operator.assignment.ts",
     "text": "=",
     "line": 8,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 19,
@@ -1445,7 +1445,7 @@
     "type": "meta.block.ts",
     "text": " ",
     "line": 8,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 20,
@@ -1460,7 +1460,7 @@
     "type": "variable.other.readwrite.ts",
     "text": "name",
     "line": 8,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 24,
@@ -1475,7 +1475,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 8,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 0,
@@ -1489,7 +1489,7 @@
     "type": "meta.block.ts",
     "text": "        ",
     "line": 9,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 8,
@@ -1504,7 +1504,7 @@
     "type": "variable.language.this.ts",
     "text": "this",
     "line": 9,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 12,
@@ -1519,7 +1519,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 9,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 13,
@@ -1534,7 +1534,7 @@
     "type": "variable.other.property.ts",
     "text": "order",
     "line": 9,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 18,
@@ -1548,7 +1548,7 @@
     "type": "meta.block.ts",
     "text": " ",
     "line": 9,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 19,
@@ -1563,7 +1563,7 @@
     "type": "keyword.operator.assignment.ts",
     "text": "=",
     "line": 9,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 20,
@@ -1577,7 +1577,7 @@
     "type": "meta.block.ts",
     "text": " ",
     "line": 9,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 21,
@@ -1592,7 +1592,7 @@
     "type": "variable.other.readwrite.ts",
     "text": "order",
     "line": 9,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 26,
@@ -1607,7 +1607,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 9,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 0,
@@ -1621,7 +1621,7 @@
     "type": "meta.block.ts",
     "text": "        ",
     "line": 10,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 8,
@@ -1636,7 +1636,7 @@
     "type": "variable.language.this.ts",
     "text": "this",
     "line": 10,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 12,
@@ -1651,7 +1651,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 10,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 13,
@@ -1666,7 +1666,7 @@
     "type": "variable.other.property.ts",
     "text": "age",
     "line": 10,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 16,
@@ -1680,7 +1680,7 @@
     "type": "meta.block.ts",
     "text": " ",
     "line": 10,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 17,
@@ -1695,7 +1695,7 @@
     "type": "keyword.operator.assignment.ts",
     "text": "=",
     "line": 10,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 18,
@@ -1709,7 +1709,7 @@
     "type": "meta.block.ts",
     "text": " ",
     "line": 10,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 19,
@@ -1724,7 +1724,7 @@
     "type": "variable.other.readwrite.ts",
     "text": "age",
     "line": 10,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 22,
@@ -1739,7 +1739,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 10,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 0,
@@ -1753,7 +1753,7 @@
     "type": "meta.block.ts",
     "text": "        ",
     "line": 11,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 8,
@@ -1768,7 +1768,7 @@
     "type": "variable.language.this.ts",
     "text": "this",
     "line": 11,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 12,
@@ -1783,7 +1783,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 11,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 13,
@@ -1798,7 +1798,7 @@
     "type": "variable.other.property.ts",
     "text": "tameable",
     "line": 11,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 21,
@@ -1812,7 +1812,7 @@
     "type": "meta.block.ts",
     "text": " ",
     "line": 11,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 22,
@@ -1827,7 +1827,7 @@
     "type": "keyword.operator.assignment.ts",
     "text": "=",
     "line": 11,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 23,
@@ -1841,7 +1841,7 @@
     "type": "meta.block.ts",
     "text": " ",
     "line": 11,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 24,
@@ -1856,7 +1856,7 @@
     "type": "variable.other.readwrite.ts",
     "text": "tameable",
     "line": 11,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 32,
@@ -1871,7 +1871,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 11,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 0,
@@ -1885,7 +1885,7 @@
     "type": "meta.block.ts",
     "text": "    ",
     "line": 12,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -1900,7 +1900,7 @@
     "type": "punctuation.definition.block.ts",
     "text": "}",
     "line": 12,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -1912,7 +1912,7 @@
     "type": "meta.class.ts",
     "text": "    ",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -1926,7 +1926,7 @@
     "type": "storage.modifier.ts",
     "text": "public",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 10,
@@ -1939,7 +1939,7 @@
     "type": "meta.method.declaration.ts",
     "text": " ",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 11,
@@ -1954,7 +1954,7 @@
     "type": "entity.name.function.ts",
     "text": "copy",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 15,
@@ -1969,7 +1969,7 @@
     "type": "punctuation.definition.parameters.begin.ts",
     "text": "(",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 16,
@@ -1984,7 +1984,7 @@
     "type": "punctuation.definition.parameters.end.ts",
     "text": ")",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 17,
@@ -1999,7 +1999,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 18,
@@ -2013,7 +2013,7 @@
     "type": "meta.return.type.ts",
     "text": " ",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 19,
@@ -2028,7 +2028,7 @@
     "type": "entity.name.type.ts",
     "text": "Required",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 27,
@@ -2044,7 +2044,7 @@
     "type": "punctuation.definition.typeparameters.begin.ts",
     "text": "<",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 28,
@@ -2060,7 +2060,7 @@
     "type": "entity.name.type.ts",
     "text": "Record",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 34,
@@ -2077,7 +2077,7 @@
     "type": "punctuation.definition.typeparameters.begin.ts",
     "text": "<",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 35,
@@ -2094,7 +2094,7 @@
     "type": "keyword.operator.expression.keyof.ts",
     "text": "keyof",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 40,
@@ -2110,7 +2110,7 @@
     "type": "meta.type.parameters.ts",
     "text": " ",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 41,
@@ -2127,7 +2127,7 @@
     "type": "entity.name.type.ts",
     "text": "Pet",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 44,
@@ -2144,7 +2144,7 @@
     "type": "punctuation.separator.comma.ts",
     "text": ",",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 45,
@@ -2160,7 +2160,7 @@
     "type": "meta.type.parameters.ts",
     "text": " ",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 46,
@@ -2177,7 +2177,7 @@
     "type": "support.type.primitive.ts",
     "text": "string",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 52,
@@ -2193,7 +2193,7 @@
     "type": "meta.type.parameters.ts",
     "text": " ",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 53,
@@ -2210,7 +2210,7 @@
     "type": "keyword.operator.type.ts",
     "text": "|",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 54,
@@ -2226,7 +2226,7 @@
     "type": "meta.type.parameters.ts",
     "text": " ",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 55,
@@ -2243,7 +2243,7 @@
     "type": "support.type.primitive.ts",
     "text": "number",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 61,
@@ -2259,7 +2259,7 @@
     "type": "meta.type.parameters.ts",
     "text": " ",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 62,
@@ -2276,7 +2276,7 @@
     "type": "keyword.operator.type.ts",
     "text": "|",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 63,
@@ -2292,7 +2292,7 @@
     "type": "meta.type.parameters.ts",
     "text": " ",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 64,
@@ -2309,7 +2309,7 @@
     "type": "support.type.primitive.ts",
     "text": "boolean",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 71,
@@ -2326,7 +2326,7 @@
     "type": "punctuation.definition.typeparameters.end.ts",
     "text": ">",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 72,
@@ -2342,7 +2342,7 @@
     "type": "punctuation.definition.typeparameters.end.ts",
     "text": ">",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 73,
@@ -2356,7 +2356,7 @@
     "type": "meta.return.type.ts",
     "text": " ",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 74,
@@ -2371,7 +2371,7 @@
     "type": "punctuation.definition.block.ts",
     "text": "{",
     "line": 13,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -2641,7 +2641,7 @@
     "type": "meta.class.ts",
     "text": "    ",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -2655,7 +2655,7 @@
     "type": "storage.modifier.ts",
     "text": "public",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 10,
@@ -2668,7 +2668,7 @@
     "type": "meta.method.declaration.ts",
     "text": " ",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 11,
@@ -2683,7 +2683,7 @@
     "type": "entity.name.function.ts",
     "text": "noise",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 16,
@@ -2698,7 +2698,7 @@
     "type": "punctuation.definition.parameters.begin.ts",
     "text": "(",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 17,
@@ -2713,7 +2713,7 @@
     "type": "variable.parameter.ts",
     "text": "hours",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 22,
@@ -2729,7 +2729,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 23,
@@ -2744,7 +2744,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 24,
@@ -2760,7 +2760,7 @@
     "type": "support.type.primitive.ts",
     "text": "number",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 30,
@@ -2775,7 +2775,7 @@
     "type": "punctuation.definition.parameters.end.ts",
     "text": ")",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 31,
@@ -2790,7 +2790,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 32,
@@ -2804,7 +2804,7 @@
     "type": "meta.return.type.ts",
     "text": " ",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 33,
@@ -2819,7 +2819,7 @@
     "type": "support.type.primitive.ts",
     "text": "void",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 37,
@@ -2833,7 +2833,7 @@
     "type": "meta.return.type.ts",
     "text": " ",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 38,
@@ -2848,7 +2848,7 @@
     "type": "punctuation.definition.block.ts",
     "text": "{",
     "line": 16,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -2862,7 +2862,7 @@
     "type": "meta.block.ts",
     "text": "        ",
     "line": 17,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 8,
@@ -2878,7 +2878,7 @@
     "type": "variable.other.object.ts",
     "text": "console",
     "line": 17,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 15,
@@ -2894,7 +2894,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 17,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 16,
@@ -2910,7 +2910,7 @@
     "type": "entity.name.function.ts",
     "text": "log",
     "line": 17,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 19,
@@ -2925,7 +2925,7 @@
     "type": "meta.brace.round.ts",
     "text": "(",
     "line": 17,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 20,
@@ -2941,7 +2941,7 @@
     "type": "punctuation.definition.string.begin.ts",
     "text": "\"",
     "line": 17,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 21,
@@ -2956,7 +2956,7 @@
     "type": "string.quoted.double.ts",
     "text": "Grunt",
     "line": 17,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 26,
@@ -2972,7 +2972,7 @@
     "type": "punctuation.definition.string.end.ts",
     "text": "\"",
     "line": 17,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 27,
@@ -2987,7 +2987,7 @@
     "type": "meta.brace.round.ts",
     "text": ")",
     "line": 17,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 28,
@@ -3002,7 +3002,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 17,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 0,
@@ -3016,7 +3016,7 @@
     "type": "meta.block.ts",
     "text": "    ",
     "line": 18,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -3031,7 +3031,7 @@
     "type": "punctuation.definition.block.ts",
     "text": "}",
     "line": 18,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -3043,7 +3043,7 @@
     "type": "meta.class.ts",
     "text": "    ",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -3057,7 +3057,7 @@
     "type": "storage.modifier.ts",
     "text": "public",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 10,
@@ -3070,7 +3070,7 @@
     "type": "meta.method.declaration.ts",
     "text": " ",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 11,
@@ -3085,7 +3085,7 @@
     "type": "entity.name.function.ts",
     "text": "move",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 15,
@@ -3100,7 +3100,7 @@
     "type": "punctuation.definition.parameters.begin.ts",
     "text": "(",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 16,
@@ -3115,7 +3115,7 @@
     "type": "variable.parameter.ts",
     "text": "meters",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 22,
@@ -3131,7 +3131,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 23,
@@ -3146,7 +3146,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 24,
@@ -3162,7 +3162,7 @@
     "type": "support.type.primitive.ts",
     "text": "number",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 30,
@@ -3177,7 +3177,7 @@
     "type": "punctuation.definition.parameters.end.ts",
     "text": ")",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 31,
@@ -3192,7 +3192,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 32,
@@ -3206,7 +3206,7 @@
     "type": "meta.return.type.ts",
     "text": " ",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 33,
@@ -3221,7 +3221,7 @@
     "type": "support.type.primitive.ts",
     "text": "void",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 37,
@@ -3235,7 +3235,7 @@
     "type": "meta.return.type.ts",
     "text": " ",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 38,
@@ -3250,7 +3250,7 @@
     "type": "punctuation.definition.block.ts",
     "text": "{",
     "line": 19,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -3264,7 +3264,7 @@
     "type": "meta.block.ts",
     "text": "        ",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 8,
@@ -3280,7 +3280,7 @@
     "type": "variable.other.object.ts",
     "text": "console",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 15,
@@ -3296,7 +3296,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 16,
@@ -3312,7 +3312,7 @@
     "type": "entity.name.function.ts",
     "text": "log",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 19,
@@ -3327,7 +3327,7 @@
     "type": "meta.brace.round.ts",
     "text": "(",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 20,
@@ -3343,7 +3343,7 @@
     "type": "punctuation.definition.string.template.begin.ts",
     "text": "`",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 21,
@@ -3360,7 +3360,7 @@
     "type": "punctuation.definition.template-expression.begin.ts",
     "text": "${",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 23,
@@ -3378,7 +3378,7 @@
     "type": "variable.language.this.ts",
     "text": "this",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 27,
@@ -3396,7 +3396,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 28,
@@ -3414,7 +3414,7 @@
     "type": "variable.other.property.ts",
     "text": "name",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 32,
@@ -3431,7 +3431,7 @@
     "type": "punctuation.definition.template-expression.end.ts",
     "text": "}",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 33,
@@ -3446,7 +3446,7 @@
     "type": "string.template.ts",
     "text": " moved ",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 40,
@@ -3463,7 +3463,7 @@
     "type": "punctuation.definition.template-expression.begin.ts",
     "text": "${",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 42,
@@ -3482,7 +3482,7 @@
     "type": "variable.other.object.ts",
     "text": "meters",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 48,
@@ -3501,7 +3501,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 49,
@@ -3520,7 +3520,7 @@
     "type": "entity.name.function.ts",
     "text": "toString",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 57,
@@ -3538,7 +3538,7 @@
     "type": "meta.brace.round.ts",
     "text": "(",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 58,
@@ -3556,7 +3556,7 @@
     "type": "meta.brace.round.ts",
     "text": ")",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 59,
@@ -3573,7 +3573,7 @@
     "type": "punctuation.definition.template-expression.end.ts",
     "text": "}",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 60,
@@ -3588,7 +3588,7 @@
     "type": "string.template.ts",
     "text": "m.",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 62,
@@ -3604,7 +3604,7 @@
     "type": "punctuation.definition.string.template.end.ts",
     "text": "`",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 63,
@@ -3619,7 +3619,7 @@
     "type": "meta.brace.round.ts",
     "text": ")",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 64,
@@ -3634,7 +3634,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 20,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 0,
@@ -3648,7 +3648,7 @@
     "type": "meta.block.ts",
     "text": "    ",
     "line": 21,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -3663,7 +3663,7 @@
     "type": "punctuation.definition.block.ts",
     "text": "}",
     "line": 21,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -3675,7 +3675,7 @@
     "type": "meta.class.ts",
     "text": "    ",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -3689,7 +3689,7 @@
     "type": "storage.modifier.ts",
     "text": "public",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 10,
@@ -3702,7 +3702,7 @@
     "type": "meta.method.declaration.ts",
     "text": " ",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 11,
@@ -3717,7 +3717,7 @@
     "type": "entity.name.function.ts",
     "text": "sleep",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 16,
@@ -3732,7 +3732,7 @@
     "type": "punctuation.definition.parameters.begin.ts",
     "text": "(",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 17,
@@ -3747,7 +3747,7 @@
     "type": "variable.parameter.ts",
     "text": "hours",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 22,
@@ -3763,7 +3763,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 23,
@@ -3778,7 +3778,7 @@
     "type": "meta.type.annotation.ts",
     "text": " ",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 24,
@@ -3794,7 +3794,7 @@
     "type": "support.type.primitive.ts",
     "text": "number",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 30,
@@ -3809,7 +3809,7 @@
     "type": "punctuation.definition.parameters.end.ts",
     "text": ")",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 31,
@@ -3824,7 +3824,7 @@
     "type": "keyword.operator.type.annotation.ts",
     "text": ":",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 32,
@@ -3838,7 +3838,7 @@
     "type": "meta.return.type.ts",
     "text": " ",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 33,
@@ -3853,7 +3853,7 @@
     "type": "support.type.primitive.ts",
     "text": "void",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 37,
@@ -3867,7 +3867,7 @@
     "type": "meta.return.type.ts",
     "text": " ",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 38,
@@ -3882,7 +3882,7 @@
     "type": "punctuation.definition.block.ts",
     "text": "{",
     "line": 22,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
@@ -3896,7 +3896,7 @@
     "type": "meta.block.ts",
     "text": "        ",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 8,
@@ -3912,7 +3912,7 @@
     "type": "variable.other.object.ts",
     "text": "console",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 15,
@@ -3928,7 +3928,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 16,
@@ -3944,7 +3944,7 @@
     "type": "entity.name.function.ts",
     "text": "log",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 19,
@@ -3959,7 +3959,7 @@
     "type": "meta.brace.round.ts",
     "text": "(",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 20,
@@ -3975,7 +3975,7 @@
     "type": "punctuation.definition.string.template.begin.ts",
     "text": "`",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 21,
@@ -3992,7 +3992,7 @@
     "type": "punctuation.definition.template-expression.begin.ts",
     "text": "${",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 23,
@@ -4010,7 +4010,7 @@
     "type": "variable.language.this.ts",
     "text": "this",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 27,
@@ -4028,7 +4028,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 28,
@@ -4046,7 +4046,7 @@
     "type": "variable.other.property.ts",
     "text": "name",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 32,
@@ -4063,7 +4063,7 @@
     "type": "punctuation.definition.template-expression.end.ts",
     "text": "}",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 33,
@@ -4078,7 +4078,7 @@
     "type": "string.template.ts",
     "text": " slept for ",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 44,
@@ -4095,7 +4095,7 @@
     "type": "punctuation.definition.template-expression.begin.ts",
     "text": "${",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 46,
@@ -4114,7 +4114,7 @@
     "type": "variable.other.object.ts",
     "text": "hours",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 51,
@@ -4133,7 +4133,7 @@
     "type": "punctuation.accessor.ts",
     "text": ".",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 52,
@@ -4152,7 +4152,7 @@
     "type": "entity.name.function.ts",
     "text": "toString",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 60,
@@ -4170,7 +4170,7 @@
     "type": "meta.brace.round.ts",
     "text": "(",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 61,
@@ -4188,7 +4188,7 @@
     "type": "meta.brace.round.ts",
     "text": ")",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 62,
@@ -4205,7 +4205,7 @@
     "type": "punctuation.definition.template-expression.end.ts",
     "text": "}",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 63,
@@ -4220,7 +4220,7 @@
     "type": "string.template.ts",
     "text": ".",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 64,
@@ -4236,7 +4236,7 @@
     "type": "punctuation.definition.string.template.end.ts",
     "text": "`",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 65,
@@ -4251,7 +4251,7 @@
     "type": "meta.brace.round.ts",
     "text": ")",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 66,
@@ -4266,7 +4266,7 @@
     "type": "punctuation.terminator.statement.ts",
     "text": ";",
     "line": 23,
-    "level": 0
+    "level": 2
   },
   {
     "startIndex": 0,
@@ -4280,7 +4280,7 @@
     "type": "meta.block.ts",
     "text": "    ",
     "line": 24,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 4,
@@ -4295,7 +4295,7 @@
     "type": "punctuation.definition.block.ts",
     "text": "}",
     "line": 24,
-    "level": 0
+    "level": 1
   },
   {
     "startIndex": 0,
