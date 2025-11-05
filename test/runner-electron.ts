@@ -9,6 +9,7 @@ import { getTestModeExtension } from './util/common';
 const files = [
 	require.resolve('./suite/services/selectors.test'),
 	require.resolve('./suite/services/tokenizer.test'),
+	require.resolve('./suite/services/indentation.test'),
 	require.resolve('./suite/services/outline.test'),
 	require.resolve('./suite/services/document.test'),
 	require.resolve('./suite/providers/folding.test'),

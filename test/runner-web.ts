@@ -28,6 +28,7 @@ export async function run(): Promise<void> {
 		// import mocha test files, so that webpack can inline them
 		import('./suite/services/selectors.test');
 		import('./suite/services/tokenizer.test');
+		import('./suite/services/indentation.test');
 		import('./suite/services/outline.test');
 		import('./suite/services/document.test');
 		import('./suite/providers/folding.test');

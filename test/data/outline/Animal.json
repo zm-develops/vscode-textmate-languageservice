@@ -179,8 +179,8 @@
           "character": 23
         },
         {
-          "line": 15,
-          "character": 11
+          "line": 16,
+          "character": 32
         }
       ]
     },
@@ -295,7 +295,7 @@
   },
   {
     "anchor": 125,
-    "level": 2,
+    "level": 3,
     "line": 16,
     "location": {
       "uri": "./samples/Animal.m",
@@ -305,8 +305,8 @@
           "character": 23
         },
         {
-          "line": 18,
-          "character": 11
+          "line": 16,
+          "character": 32
         }
       ]
     },
@@ -316,7 +316,7 @@
   },
   {
     "anchor": 130,
-    "level": 3,
+    "level": 2,
     "line": 17,
     "location": {
       "uri": "./samples/Animal.m",
@@ -326,8 +326,8 @@
           "character": 12
         },
         {
-          "line": 18,
-          "character": 11
+          "line": 30,
+          "character": 0
         }
       ]
     },
@@ -337,7 +337,7 @@
   },
   {
     "anchor": 154,
-    "level": 2,
+    "level": 3,
     "line": 19,
     "location": {
       "uri": "./samples/Animal.m",
@@ -358,7 +358,7 @@
   },
   {
     "anchor": 175,
-    "level": 2,
+    "level": 3,
     "line": 22,
     "location": {
       "uri": "./samples/Animal.m",
@@ -379,7 +379,7 @@
   },
   {
     "anchor": 214,
-    "level": 2,
+    "level": 3,
     "line": 25,
     "location": {
       "uri": "./samples/Animal.m",

@@ -14,6 +14,7 @@ function initServiceComponent<T>(ls: TextmateLanguageService, name: string): T {
 
 type DocumentService = ReturnType<TextmateLanguageService['initDocumentService']>;
 type TokenService = ReturnType<TextmateLanguageService['initTokenService']>;
+type IndentationService = ReturnType<TextmateLanguageService['initIndentationService']>;
 type TextmateOutlineService = ReturnType<TextmateLanguageService['initOutlineService']>;
 type TextmateFoldingRangeProvider = ReturnType<TextmateLanguageService['createFoldingRangeProvider']>;
 type TextmateDefinitionProvider = ReturnType<TextmateLanguageService['createDefinitionProvider']>;
@@ -28,6 +29,9 @@ export const documentServicePromise = initServiceComponent<DocumentService>(text
 
 /** `TokenizerService` component. */
 export const tokenServicePromise = initServiceComponent<TokenService>(textmateService, 'initTokenService');
+
+/** `IndentationService` component. */
+export const indentationServicePromise = initServiceComponent<IndentationService>(textmateService, 'initIndentationService');
 
 /** `OutlineService` component. */
 export const outlineServicePromise = initServiceComponent<TextmateOutlineService>(textmateService, 'initOutlineService');

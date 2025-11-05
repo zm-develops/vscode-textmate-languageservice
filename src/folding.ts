@@ -5,6 +5,7 @@ import { TextmateScopeSelector } from './util/selectors';
 import type { ConfigData } from './config';
 import type { TextmateToken, TokenizerService } from './services/tokenizer';
 import type { OutlineEntry, OutlineService } from './services/outline';
+import type { IndentationService } from './services/indentation';
 
 const rangeLimit = 5000;
 const commentScopeSelector = new TextmateScopeSelector('comment');
@@ -22,6 +23,7 @@ export class TextmateFoldingRangeProvider implements vscode.FoldingRangeProvider
 	constructor(
 		private _config: ConfigData,
 		private _tokenService: TokenizerService,
+		private _indentationService: IndentationService,
 		private _outlineService: OutlineService
 	) {}
 
@@ -31,24 +33,25 @@ export class TextmateFoldingRangeProvider implements vscode.FoldingRangeProvider
 		_token: vscode.CancellationToken
 	): Promise<vscode.FoldingRange[]> {
 		const tokens = await this._tokenService.fetch(document);
+		const levels = await this._indentationService.fetch(document);
 		const outline = await this._outlineService.fetch(document);
 
 		const foldables = await Promise.all([
-			this.getRegions(tokens),
-			this.getHeaderFoldingRanges(tokens, document, outline),
-			this.getBlockFoldingRanges(tokens)
+			this.getRegions(tokens, levels),
+			this.getHeaderFoldingRanges(tokens, levels, document, outline),
+			this.getBlockFoldingRanges(tokens, levels)
 		]);
 
 		const results: vscode.FoldingRange[] = [];
 		return results.concat(...foldables).slice(0, rangeLimit);
 	}
 
-	private getRegions(tokens: TextmateToken[]): vscode.FoldingRange[] {
+	private getRegions(tokens: TextmateToken[], levels: number[]): vscode.FoldingRange[] {
 		const regions = tokens.filter(this.isRegion.bind(this) as typeof this.isRegion, this);
-		const markers = regions.map(function(this: TextmateFoldingRangeProvider, token): FoldingToken {
+		const markers = regions.map(function(this: TextmateFoldingRangeProvider, token, index): FoldingToken {
 			return {
 				isStart: this.isStartRegion(token),
-				level: token.level,
+				level: levels[index],
 				line: token.line,
 				type: token.type
 			};
@@ -73,7 +76,7 @@ export class TextmateFoldingRangeProvider implements vscode.FoldingRangeProvider
 		return ranges;
 	}
 
-	private getHeaderFoldingRanges(tokens: TextmateToken[], document: vscode.TextDocument, outline: OutlineEntry[]) {
+	private getHeaderFoldingRanges(tokens: TextmateToken[], levels: number[], document: vscode.TextDocument, outline: OutlineEntry[]) {
 		const sections = outline.filter(isSectionEntry, this);
 		const ranges: vscode.FoldingRange[] = [];
 
@@ -85,8 +88,9 @@ export class TextmateFoldingRangeProvider implements vscode.FoldingRangeProvider
 				: document.lineCount - 1;
 
 			const dedentRange = tokens.slice(section.anchor + 1, sections[index + 1]?.anchor);
-			const dedentToken = dedentRange.find(function(token: TextmateToken) {
-				return token.line > startLine && token.line < endLine && token.level < section.level;
+			const dedentLevels = levels.slice(section.anchor + 1, sections[index + 1]?.anchor);
+			const dedentToken = dedentRange.find(function(token: TextmateToken, subindex: number): boolean {
+				return token.line > startLine && token.line < endLine && dedentLevels[subindex] < section.level;
 			});
 			if (dedentToken) {
 				endLine = dedentToken.line - 1;
@@ -101,12 +105,13 @@ export class TextmateFoldingRangeProvider implements vscode.FoldingRangeProvider
 		return ranges;
 	}
 
-	private getBlockFoldingRanges(tokens: TextmateToken[]): vscode.FoldingRange[] {
-		const bounds: TextmateToken[] = tokens.filter(isBlockBoundary, tokens);
+	private getBlockFoldingRanges(tokens: TextmateToken[], levels: number[]): vscode.FoldingRange[] {
+		const bounds: TextmateToken[] = tokens.filter(isBlockBoundary.bind(null, tokens, levels));
 		const markers = bounds.map(function(bound): FoldingToken {
+			const index = tokens.indexOf(bound);
 			return {
-				isStart: tokens[tokens.indexOf(bound) + 1].level > bound.level,
-				level: bound.level,
+				isStart: levels[index + 1] > levels[index],
+				level: levels[index],
 				line: bound.line,
 				type: bound.type
 			};
@@ -168,8 +173,8 @@ export class TextmateFoldingRangeProvider implements vscode.FoldingRangeProvider
 	}
 }
 
-function isBlockBoundary(this: TextmateToken[], token: TextmateToken, index: number) {
-	return index !== this.length - 1 && this[index + 1].level !== token.level;
+function isBlockBoundary(tokens: TextmateToken[], levels: number[], _token: TextmateToken, index: number) {
+	return index !== tokens.length - 1 && levels[index + 1] !== levels[index];
 }
 
 function isSectionEntry(entry: OutlineEntry): boolean {
