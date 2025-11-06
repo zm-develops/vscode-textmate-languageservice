@@ -7,8 +7,6 @@ import { documentServicePromise } from '../../util/factory';
 import { BASENAMES, getSampleFileUri } from '../../util/files';
 import { jsonify } from '../../util/jsonify';
 
-import type { FullTextDocument } from '../../../src/services/document';
-
 suite('test/suite/document.test.ts - DocumentService class (src/services/document.ts)', function() {
 	this.timeout(5000);
 

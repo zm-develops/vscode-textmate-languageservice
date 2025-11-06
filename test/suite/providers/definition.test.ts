@@ -10,9 +10,14 @@ import { runSamplePass } from '../../util/bench';
 
 import type { TextmateToken } from '../../../src/services/tokenizer';
 import { TextmateScopeSelector } from '../../util/common';
+import { jsonify } from '../../util/jsonify';
 
 suite('test/suite/definition.test.ts - TextmateDefinitionProvider class (src/definition.ts)', function() {
 	this.timeout(10000);
+
+	this.beforeAll(function() {
+		void vscode.window.showInformationMessage('TextmateDefinitionProvider class (src/definition.ts)');
+	});
 
 	test('TextmateDefinitionProvider.provideDefinition(): Promise<[vscode.Location,...vscode.Location[]]>', async function() {
 		// Early exit + pass if we are in web runtime.
@@ -20,7 +25,6 @@ suite('test/suite/definition.test.ts - TextmateDefinitionProvider class (src/def
 			this.skip();
 		}
 
-		void vscode.window.showInformationMessage('TextmateDefinitionProvider class (src/definition.ts)');
 		const results = await definitionProviderResult();
 
 		for (let index = 0; index < results.length; index++) {
@@ -28,7 +32,9 @@ suite('test/suite/definition.test.ts - TextmateDefinitionProvider class (src/def
 			const filename = `${BASENAMES[globalThis.languageId][index]}.m`;
 
 			for (const entry of page) {
-				strictEqual(entry.definition instanceof Object, true, filename);
+				strictEqual(jsonify(entry.uri), `./samples/${filename}`, filename);
+				strictEqual(typeof entry.definition === 'object', true, filename);
+				strictEqual(jsonify((entry.definition as vscode.Location).uri), './samples/Animal.m', filename);
 			}
 		}
 	});

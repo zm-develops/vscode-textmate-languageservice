@@ -3,14 +3,32 @@
 import * as vscode from 'vscode';
 
 import { documentServicePromise, documentSymbolProviderPromise } from '../../util/factory';
-import { BASENAMES, getSampleFileUri } from '../../util/files';
+import { BASENAMES, EXTENSIONS, getSampleFileUri } from '../../util/files';
 import { runSamplePass } from '../../util/bench';
+import { strictEqual } from '../../util/assert';
 
 suite('test/suite/document-symbol.test.ts - TextmateDocumentSymbolProvider class (src/document-symbol.ts)', function() {
 	this.timeout(10000);
 
-	test('TextmateDocumentSymbolProvider.provideDocumentSymbols(): Promise<vscode.DocumentSymbol[]>', async function() {
+	this.beforeAll(function() {
 		void vscode.window.showInformationMessage('TextmateDocumentSymbolProvider class (src/document-symbol.ts)');
+	});
+
+	test('TextmateDocumentSymbolProvider.provideDocumentSymbols(): Promise<[vscode.DocumentSymbol, ...vscode.DocumentSymbol]>', async function() {
+		if (BASENAMES[globalThis.languageId].length === 1) {
+			this.skip();
+		}
+
+		const samples = await documentSymbolProviderResult();
+		for (let index = 0; index < samples.length; index++) {
+			const basename = BASENAMES[globalThis.languageId][index];
+			const title = samples[index][0];
+
+			strictEqual(title.name === basename, true, basename + EXTENSIONS[globalThis.languageId]);
+		}
+	});
+
+	test('TextmateDocumentSymbolProvider.provideDocumentSymbols(): Promise<vscode.DocumentSymbol[]>', async function() {
 		const samples = await documentSymbolProviderResult();
 
 		let error: TypeError | void = void 0;
