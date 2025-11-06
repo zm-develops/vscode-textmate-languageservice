@@ -15,8 +15,8 @@ export abstract class ServiceBase<T> {
 	private _cache: Record<string, Promise<T>> = {};
 	private _integrity: Record<string, string> = {};
 
-	public async fetch(document: vscode.TextDocument | string): Promise<T> {
-		const filepath = typeof document === 'string' ? document : document.uri.path;
+	public async fetch(document: vscode.TextDocument): Promise<T> {
+		const filepath = document.uri.path;
 		const hash = await hashify(document);
 
 		if (
