@@ -12,7 +12,7 @@ type SelectorTestData = typeof selectorJson;
 import type * as mapJson from '../../data/selectors/map.json';
 type SelectorMapTestData = typeof mapJson;
 
-suite('test/suite/selectors.util.test.ts - TextmateScopeSelector class (src/../util/selectors.ts)', function() {
+suite('test/suite/services/selectors.test.ts - TextmateScopeSelector class (src/util/selectors.ts)', function() {
 	test('TextmateScopeSelector.match(scopes) - Macromates spec', async function() {
 		void vscode.window.showInformationMessage('TextmateScopeSelector class (src/utils/selectors.ts)');
 		const tests = await scopeInput();
@@ -33,7 +33,7 @@ async function scopeInput() {
 	return tests;
 }
 
-suite('test/suite/selectors.util.test.ts - TextmateScopeSelectorMap class (src/utils/selectors.ts)', function() {
+suite('test/suite/services/selectors.test.ts - TextmateScopeSelectorMap class (src/utils/selectors.ts)', function() {
 	test('TextmateScopeSelectorMap.key(scopes)', async function() {
 		void vscode.window.showInformationMessage('TextmateScopeSelectorMap class (src/utils/selectors.ts)');
 		const testCases = await mapInput();
