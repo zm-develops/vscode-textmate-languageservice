@@ -6,7 +6,7 @@
   "author": {
     "name": "vsce-toolroom",
     "email": "git.vsce-toolroom@outlook.com",
-    "url": "https://github.com/vsce-toolroom/"
+    "url": "https://github.com/zm-develops/"
   },
   "enabledApiProposals": [
     "tokenInformation"
@@ -28,15 +28,15 @@
     "tokenization",
     "tokenizer"
   ],
-  "homepage": "https://github.com/vsce-toolroom/vscode-textmate-languageservice/blob/main/README.md",
+  "homepage": "https://github.com/zm-develops/vscode-textmate-languageservice/blob/main/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vsce-toolroom/vscode-textmate-languageservice.git"
+    "url": "https://github.com/zm-develops/vscode-textmate-languageservice.git"
   },
   "main": "./dist/src/main.js",
   "browser": "./dist/src/main.js",
   "types": "./dist/types/main.d.ts",
-  "bugs": "https://github.com/vsce-toolroom/vscode-textmate-languageservice/issues",
+  "bugs": "https://github.com/zm-develops/vscode-textmate-languageservice/issues",
   "scripts": {
     "prepublishOnly": "npm-run-all test bundle clean-production",
     "test": "npm-run-all lint smoke reset patch bundle expect stage harness",
