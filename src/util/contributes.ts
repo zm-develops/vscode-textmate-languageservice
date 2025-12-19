@@ -139,7 +139,7 @@ export const plaintextLanguageDefinition: LanguageDefinition = {
 
 export const plaintextGrammarDefinition = {
 	language: 'plaintext',
-	path: './out/vs/editor/common/languages/plaintext.tmLanguage.json',
+	path: 'data:application/json,%7B%7D',
 	scopeName: 'text'
 };
 
