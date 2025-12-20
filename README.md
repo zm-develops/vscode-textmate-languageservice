@@ -1,12 +1,12 @@
 # `vscode-textmate-languageservice`
 
-<p align="center"><img src="https://raw.githubusercontent.com/vsce-toolroom/vscode-textmate-languageservice/v5.0.0/assets/logo.png" width="205px" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/zm-develops/vscode-textmate-languageservice/raw/v5.0.0/assets/logo.png" width="205px" /></p>
 
 > *This package is in LTS mode & the Textmate technology is competing with the [`tree-sitter` symbolic-expression parser technology][tree-sitter-parser-guide], as used in `vscode-anycode`.*
 
 Language service providers & APIs driven entirely by your Textmate grammar and one configuration file.
 
-<p align="center"><img src="https://github.com/vsce-toolroom/vscode-textmate-languageservice/raw/v5.0.0/assets/demo-outline.png" height="320"/></p>
+<p align="center"><img src="https://github.com/zm-develops/vscode-textmate-languageservice/raw/v5.0.0/assets/demo-outline.png" height="320"/></p>
 
 To use the API methods and tokenization / outline services, you only need a Textmate grammar. This can be from your extension or one of VS Code's built-in languages.
 
