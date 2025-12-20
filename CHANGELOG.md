@@ -1,5 +1,17 @@
 # Changelog
 
+## 5.0.0
+
+<a href="https://code.visualstudio.com/updates/v1_100" target="_blank"><img src="https://github.com/vsce-toolroom/vscode-textmate-languageservice/raw/824a736/assets/compatibility-badge.svg" /></a> <a href="https://github.com/vsce-toolroom/vscode-textmate-languageservice/tree/v5.0.0/"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2025-12-20&logo=googlecalendar&logoColor=cacde2&labelColor=333333&color=2196f3" /></a> <a href="https://github.com/vsce-toolroom/vscode-textmate-languageservice/issues/71"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=v5.0.0&logo=github&logoColor=cacde2&labelColor=333333&color=2196f3" /></a>
+
+- Abstract indentation level out of tokenizer.
+- `TextmateToken.level` is now a whitespace indentation level instead of an keyword-based level.
+- `IndentationService` is introduced to make a more accurate keyword-based dedent redent & indent level.
+- Add encoding property to `vscode.TextDocument`.
+- Remove extra atom-level whitespace rules in scope selector.
+- Add more functional tests to document-dependent outline and definition services.
+- The `'plaintext'` language grammar now has a path that is a data URI with the JSON value `{}`.
+
 ## 4.0.0
 
 <a href="https://code.visualstudio.com/updates/v1_55" target="_blank"><img src="https://github.com/vsce-toolroom/vscode-textmate-languageservice/raw/95579fa/assets/compatibility-badge.svg" /></a> <a href="https://github.com/vsce-toolroom/vscode-textmate-languageservice/tree/v4.0.0/"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2024-11-13&logo=googlecalendar&logoColor=cacde2&labelColor=333333&color=2196f3" /></a> <a href="https://github.com/vsce-toolroom/vscode-textmate-languageservice/milestone/10"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=v4.0.0&logo=github&logoColor=cacde2&labelColor=333333&color=2196f3" /></a>
