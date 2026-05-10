@@ -1,6 +1,6 @@
 # `vscode-textmate-languageservice`
 
-<p align="center"><img src="https://raw.githubusercontent.com/zm-develops/vscode-textmate-languageservice/raw/v5.0.0/assets/logo.png" width="205px" /></p>
+<p align="center"><img src="https://github.com/zm-develops/vscode-textmate-languageservice/raw/v5.0.0/assets/logo.png" width="205px" /></p>
 
 > *This package is in LTS mode & the Textmate technology is competing with the [`tree-sitter` symbolic-expression parser technology][tree-sitter-parser-guide], as used in `vscode-anycode`.*
 
