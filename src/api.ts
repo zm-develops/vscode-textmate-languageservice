@@ -27,7 +27,7 @@ export async function getScopeInformationAtPosition(document: vscode.TextDocumen
 	const tokenService = await generator.initTokenService();
 	const tokens = await tokenService.fetch(document);
 	const caret = tokens.find(filterTokenByPosition(position));
-	return caret;
+	return caret!;
 };
 
 /**

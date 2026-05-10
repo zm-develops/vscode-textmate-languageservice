@@ -54,6 +54,7 @@ async function hashify(document: vscode.TextDocument | string): Promise<string> 
 		const digest = await crypto.web.subtle.digest('SHA-256', buffer);
 		return buf2hex(digest);
 	}
+	return text; // this never happens
 }
 
 function buf2hex(buffer: ArrayBuffer): string {
