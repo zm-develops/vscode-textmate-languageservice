@@ -1,7 +1,7 @@
 'use strict';
 
 import * as vscode from 'vscode';
-import type * as vscodeTextmate from 'vscode-textmate';
+import * as vscodeTextmate from 'vscode-textmate';
 
 import type { PartialDeep, JsonObject, PackageJson } from 'type-fest';
 import { loadJsonFile, loadMessageBundle } from './loader';
@@ -104,10 +104,10 @@ class IndentationRule implements vscode.IndentationRule {
 	constructor(data: RegExpsStringified<vscode.IndentationRule>) {
 		this.decreaseIndentPattern = fromEntryToRegExp(data.decreaseIndentPattern);
 		this.increaseIndentPattern = fromEntryToRegExp(data.increaseIndentPattern);
-		if (this.indentNextLinePattern) {
+		if (data.indentNextLinePattern) {
 			this.indentNextLinePattern = fromEntryToRegExp(data.indentNextLinePattern);
 		}
-		if (this.unIndentedLinePattern) {
+		if (data.unIndentedLinePattern) {
 			this.unIndentedLinePattern = fromEntryToRegExp(data.unIndentedLinePattern);
 		}
 	}
@@ -206,11 +206,11 @@ export class ContributorData {
 			const priorityGrammars = manifest?.contributes?.grammars;
 
 			if (priorityLanguages && !!priorityLanguages.length) {
-				this._languages = sortContributionsExtensionLast(priorityLanguages, this._languages, 'id');
+				this._languages = sortLanguageContributionsExtensionLast(priorityLanguages, this._languages, 'id');
 			}
 
 			if (priorityGrammars && !!priorityGrammars.length) {
-				this._grammars = sortContributionsExtensionLast(priorityGrammars, this._grammars, 'scopeName');
+				this._grammars = sortGrammarContributionsExtensionLast(priorityGrammars, this._grammars, 'scopeName');
 			}
 		}
 
@@ -341,7 +341,7 @@ export class ContributorData {
 		const embeddedLanguagesDefinition = grammarData.embeddedLanguages || {};
 		const injectedEmbeddedLanguages = this._injectedEmbeddedLanguages[grammarData.scopeName];
 
-		const languageMap = {};
+		const languageMap: vscodeTextmate.IEmbeddedLanguagesMap = {};
 
 		for (const key in embeddedLanguagesDefinition) {
 			if (Object.prototype.hasOwnProperty.call(embeddedLanguagesDefinition, key)) {
@@ -382,15 +382,20 @@ export class ContributorData {
 			if (Object.prototype.hasOwnProperty.call(tokenTypeDefinition, scopeName)) {
 				switch (tokenTypeDefinition[scopeName]) {
 					case 'other':
+						// @ts-expect-error coerce to StandardTokenType
 						tokenTypeMap[scopeName] = vscode.StandardTokenType.Other;
 					case 'comment':
+						// @ts-expect-error coerce to StandardTokenType
 						tokenTypeMap[scopeName] = vscode.StandardTokenType.Comment;
 					case 'string':
+						// @ts-expect-error coerce to StandardTokenType
 						tokenTypeMap[scopeName] = vscode.StandardTokenType.String;
 					case 'regex':
+						// @ts-expect-error coerce to StandardTokenType
 						tokenTypeMap[scopeName] = vscode.StandardTokenType.RegEx;
 					case 'regexp':
-						tokenTypeMap[scopeName] = vscode.StandardTokenType.RegEx;
+						// @ts-expect-error coerce to StandardTokenType
+						tokenTypeMap[scopeName] = vscodeTextmate.StandardTokenType.RegEx;
 				}
 			}
 		}
@@ -403,7 +408,7 @@ export class ContributorData {
 	}
 
 	public getExtensionFromScopeName(scopeName: string): vscode.Extension<unknown> {
-		return this.sources.grammars[scopeName];
+		return this.sources.grammars[scopeName]!;
 	}
 
 	public async getLanguageConfigurationFromLanguageId(languageId: string): Promise<vscode.LanguageConfiguration> {
@@ -413,7 +418,7 @@ export class ContributorData {
 
 		const definition = this.getLanguageDefinitionFromId(languageId);
 		const extension = this.getExtensionFromLanguageId(languageId);
-		if (!extension || !definition) {
+		if (!extension || !definition || !definition.configuration) {
 			throw new Error(`Could not find definition for language ${languageId}`);
 		}
 
@@ -423,7 +428,7 @@ export class ContributorData {
 		const { comments, brackets, wordPattern: w, indentationRules: i, onEnterRules: o } = json;
 		const wordPattern = w ? fromEntryToRegExp(w): void 0;
 		const indentationRules = i ? new IndentationRule(i) : void 0;
-		const onEnterRules = o ? o.map(r => r ? new OnEnterRule(r) : void 0): void 0;
+		const onEnterRules = o ? o.map(r => new OnEnterRule(r)): void 0;
 
 		return { brackets, comments, indentationRules, onEnterRules, wordPattern };
 	}
@@ -434,7 +439,7 @@ function fromEntryToRegExp(entry: string | RegExpConfiguration) {
 }
 
 function computeInjections(grammars: GrammarData): Record<string, string[]> {
-	const injectionMap = {};
+	const injectionMap: Record<string, string[]> = {};
 	for (const grammar of grammars.filter(isGrammarInjectionContribution)) {
 		for (const injectScope of grammar.injectTo) {
 			let injections = injectionMap[injectScope];
@@ -448,7 +453,7 @@ function computeInjections(grammars: GrammarData): Record<string, string[]> {
 }
 
 function computeInjectedEmbeddedLanguages(grammars: GrammarData): Record<string, EmbeddedLanguagesDefinition[]> {
-	const injectedEmbeddedLanguagesMap = {};
+	const injectedEmbeddedLanguagesMap: Record<string, EmbeddedLanguagesDefinition[]> = {};
 	for (const grammar of grammars) {
 		if (!grammar.embeddedLanguages || !isGrammarInjectionContribution(grammar)) {
 			continue;
@@ -464,14 +469,22 @@ function computeInjectedEmbeddedLanguages(grammars: GrammarData): Record<string,
 	return injectedEmbeddedLanguagesMap;
 }
 
-function sortContributionsExtensionLast(priorityContributions: LanguageData, contributions: LanguageData, key: 'id'): LanguageData;
-function sortContributionsExtensionLast(priorityContributions: GrammarData, contributions: GrammarData, key: 'scopeName'): GrammarData;
-function sortContributionsExtensionLast(priorityContributions: any[], contributions: any[], key: string) {
-	const priorityContributionIds = {};
-	for (const contribution of priorityContributions) {
-		priorityContributionIds[contribution[key]] = true;
+function sortLanguageContributionsExtensionLast(priorityLanguages: LanguageData, languages: LanguageData, key: 'id'): LanguageData {
+	const priorityLanguageIds: Record<string, boolean> = {};
+	for (const contribution of priorityLanguages) {
+		priorityLanguageIds[contribution[key]] = true;
 	}
-	const sortedContributions = contributions.filter(c => !priorityContributionIds[c[key]]);
-	sortedContributions.push(...priorityContributions);
+	const sortedContributions = languages.filter(c => !priorityLanguageIds[c[key]]);
+	sortedContributions.push(...priorityLanguages);
+	return sortedContributions;
+}
+
+function sortGrammarContributionsExtensionLast(priorityGrammars: GrammarData, grammars: GrammarData, key: 'scopeName'): GrammarData {
+	const priorityGrammarIds: Record<string, boolean> = {};
+	for (const grammar of priorityGrammars) {
+		priorityGrammarIds[grammar[key]] = true;
+	}
+	const sortedContributions = grammars.filter(g => !priorityGrammarIds[g[key]]);
+	sortedContributions.push(...priorityGrammars);
 	return sortedContributions;
 }
