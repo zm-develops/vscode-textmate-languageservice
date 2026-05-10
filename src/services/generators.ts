@@ -17,9 +17,15 @@ export class GeneratorCollection {
 		return this._create(languageId);
 	}
 
+	public set(languageId: string, languageService: TextmateLanguageService): void {
+		this._languages.set(languageId, languageService);
+	}
+
 	private _create(languageId: string): TextmateLanguageService {
 		const service = new TextmateLanguageService(languageId);
 		this._languages.set(languageId, service);
 		return service;
 	}
 }
+
+export const generators = new GeneratorCollection();

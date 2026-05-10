@@ -8,6 +8,7 @@ import { loadJsonFile, readFileText } from './util/loader';
 import { getOniguruma } from './util/oniguruma';
 import { ConfigData } from './config';
 import { TextmateScopeSelector, TextmateScopeSelectorMap } from './util/selectors';
+import { generators } from './services/generators';
 import { ResolverService } from './services/resolver';
 import { TokenizerService } from './services/tokenizer';
 import { OutlineService } from './services/outline';
@@ -115,6 +116,8 @@ export default class TextmateLanguageService {
 		} else {
 			this[_private].configPromise = Promise.resolve(new ConfigData({}, languageData));
 		}
+
+		generators.set(languageId, this);
 	}
 
 	public async initTokenService(): Promise<TokenizerService> {

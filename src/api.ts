@@ -2,13 +2,12 @@
 'use strict';
 
 import * as vscode from 'vscode';
-import { GeneratorCollection } from './services/generators';
+import { generators } from './services/generators';
 import { TextmateScopeSelector } from './util/selectors';
 import { ContributorData } from './util/contributes';
 import type { TextmateToken } from './services/tokenizer';
 import type { GrammarLanguageDefinition, LanguageDefinition } from './util/contributes';
 
-const generators = new GeneratorCollection();
 
 const commentScopeSelector = new TextmateScopeSelector('comment');
 const stringScopeSelector = new TextmateScopeSelector('string');
